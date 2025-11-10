@@ -36,7 +36,7 @@ var (
 func Info(name string) string {
 	var date = BuildDate
 	if len(date) == 0 {
-		date = time.Now().Format("Mon Jan _2 15:04:05 MST 2006")
+		date = time.Now().Format(time.UnixDate)
 	}
 	return fmt.Sprintf("%s, version: %s, revision: %s, build date: %s, %s", name, Version, Revision, date, GoVersion)
 }
