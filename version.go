@@ -15,9 +15,9 @@ import (
 // STEP 2: Build the ldflags
 
 // LDFLAGS=(
-//   "-X '${PACKAGE}/version.Version=${VERSION}'"
-//   "-X '${PACKAGE}/version.Revision=${COMMIT_HASH}'"
-//   "-X '${PACKAGE}/version.BuildDate=${BUILD_TIMESTAMP}'"
+//   "-X 'github.com/ayden1st/go-version.Version=${VERSION}'"
+//   "-X 'github.com/ayden1st/go-version.Revision=${COMMIT_HASH}'"
+//   "-X 'github.com/ayden1st/go-version.BuildDate=${BUILD_TIMESTAMP}'"
 // )
 
 // STEP 3: Actual Go build process
